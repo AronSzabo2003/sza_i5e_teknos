@@ -25,8 +25,9 @@ def generate_launch_description():
             ]
         ),
         Node(
-             package='ros2_python_template',
-             executable='simple_sub_node',
+             package='sza_ie5_teknos',
+             executable='szivrajz',
              output='screen',
+
          ),
     ])
