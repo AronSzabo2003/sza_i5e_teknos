@@ -16,7 +16,7 @@ def generate_launch_description():
             name='sim'
         ),
         Node(
-             package='sza_ie5_teknos',
+             package='sza_i5e_teknos',
              executable='szivrajz',
              output='screen',
 
