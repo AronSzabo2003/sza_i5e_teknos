@@ -16,15 +16,6 @@ def generate_launch_description():
             name='sim'
         ),
         Node(
-            package='turtlesim',
-            executable='mimic',
-            name='mimic',
-            remappings=[
-                ('/input/pose', '/turtlesim1/turtle1/pose'),
-                ('/output/cmd_vel', '/turtlesim2/turtle1/cmd_vel'),
-            ]
-        ),
-        Node(
              package='sza_ie5_teknos',
              executable='szivrajz',
              output='screen',
