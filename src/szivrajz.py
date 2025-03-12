@@ -6,7 +6,7 @@ import math
 class HeartDraw(Node):
     def __init__(self):
         super().__init__('szivrajz')
-        self.publisher_ = self.create_publisher(Twist, '/turtle1/cmd_vel', 10)
+        self.publisher_ = self.create_publisher(Twist, '/turtlesim1/turtle1/cmd_vel', 10)
         self.steps = [
             (2.0, math.pi / 4, 1.5),
             (0.0, -math.pi / 2, 1.0),

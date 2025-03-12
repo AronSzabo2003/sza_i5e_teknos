@@ -16,7 +16,7 @@ def generate_launch_description():
         ),      
         Node(
             package=package_name,
-            executable='szivrajz.py',  # Python fájlneve pontosan!
+            executable='szivrajz.py', 
             name='szivrajz',
             output='screen'
         ),
