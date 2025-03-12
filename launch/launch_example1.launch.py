@@ -19,6 +19,7 @@ def generate_launch_description():
         Node(
              package='sza_i5e_teknos',
              executable='szivrajz',
+             name='szivrajz',
              output='screen',
 
          ),

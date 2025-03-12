@@ -1,42 +1,24 @@
 cmake_minimum_required(VERSION 3.8)
-project(mur_iry_kisbeadando)
+project(sza_i5e_teknos)
 
-# Default to C++14
-if(NOT CMAKE_CXX_STANDARD)
-set(CMAKE_CXX_STANDARD 14)
-endif()
-
-if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-add_compile_options(-Wall -Wextra -Wpedantic)
-endif()
-
+# Találd meg az ament_cmake és ament_cmake_python csomagokat
 find_package(ament_cmake REQUIRED)
-find_package(rclcpp REQUIRED)
-find_package(std_msgs REQUIRED)
+find_package(ament_cmake_python REQUIRED)
+find_package(rclpy REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(turtlesim REQUIRED)
 
-set(ament_dependencies
-  rclcpp
-  std_msgs
-  geometry_msgs
+# Telepítendő Python scriptek
+install(
+  PROGRAMS
+  src/szivrajz.py
+  DESTINATION lib/${PROJECT_NAME}
 )
 
-# add_executable(simple_sub_node src/print_pose.cpp)
-# ament_target_dependencies(simple_sub_node ${ament_dependencies} )
-
-add_executable(draw_house src/draw_house.cpp)
-ament_target_dependencies(draw_house rclcpp geometry_msgs turtlesim)
-
-install(TARGETS
-  draw_house  
-  DESTINATION lib/${PROJECT_NAME})
-
-install(DIRECTORY launch
-  DESTINATION share/${PROJECT_NAME})
-
-# install(TARGETS
-# # simple_sub_node
-# DESTINATION lib/${PROJECT_NAME})
+# Telepítendő launch fájlok
+install(
+  DIRECTORY launch
+  DESTINATION share/${PROJECT_NAME}
+)
 
 ament_package()
