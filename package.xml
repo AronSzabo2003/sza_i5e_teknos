@@ -4,7 +4,7 @@
   <name>sza_i5e_teknos</name>
   <version>0.0.0</version>
   <description>Szivecsket rajzol</description>
-  <maintainer email="szaboaron2003@gmail.com">Szabó Áro</maintainer>
+  <maintainer email="szaboaron2003@gmail.com">Szabó Áron</maintainer>
   <license>GNU General Public License v3.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>

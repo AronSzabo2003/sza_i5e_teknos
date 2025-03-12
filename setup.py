@@ -21,9 +21,9 @@ setup(
     description='AronSzabo2003: Package description',
     license='GNU General Public License v3.0',
     tests_require=['pytest'],
-    entry_points={
+     entry_points={
         'console_scripts': [
-            # 'control_vehicle = sza_i5e_teknos.control_vehicle:main',
+            'szivrajz = sza_i5e_teknos.src.szivrajz:main',  # Hozzáadva!
         ],
     },
 )

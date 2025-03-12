@@ -8,14 +8,7 @@ def generate_launch_description():
             namespace='turtlesim1',
             executable='turtlesim_node',
             name='sim'
-        ),
-        Node(
-            package='turtlesim',
-            namespace='turtlesim2',
-            executable='turtlesim_node',
-            name='sim'
-        ),
-        
+        ),      
         Node(
              package='sza_i5e_teknos',
              executable='szivrajz',
