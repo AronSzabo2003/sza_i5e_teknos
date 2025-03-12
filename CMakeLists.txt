@@ -11,9 +11,10 @@ find_package(turtlesim REQUIRED)
 # Telepítendő Python scriptek
 install(
   PROGRAMS
-  src/szivrajz.py
+  src/szivrajz.py  # Az abszolút elérési utat használjuk
   DESTINATION lib/${PROJECT_NAME}
 )
+
 
 # Telepítendő launch fájlok
 install(
@@ -22,3 +23,4 @@ install(
 )
 
 ament_package()
+
