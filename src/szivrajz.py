@@ -15,7 +15,8 @@ class HeartDraw(Node):
             (2.0, 0.0, 1.0),          # Egyenes felfelé
             (0.0, -math.radians(300), 0.5), # Jobbra fordulás 140°
             (1.0, 0.0, 1.0),          # Jobbra egyenes
-            (0.0,math.radians(150), 0.5), # Jobbra fordulás 90°
+            
+            (0.0,math.radians(120), 0.5), # Jobbra fordulás 90°
             (1.0, 0.0, 1.0),          # Lefelé egyenes
             (0.0, -math.radians(320), 0.5), # Jobbra fordulás 90°
             (2.0, 0.0, 1.0),          # Lefelé befejezés
