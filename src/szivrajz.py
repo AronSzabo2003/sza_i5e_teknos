@@ -11,16 +11,16 @@ class HeartDraw(Node):
         self.publisher_ = self.create_publisher(Twist, '/turtlesim1/turtle1/cmd_vel', 10)
 
         self.steps = [
-            (0.0, math.radians(120), 1.0),  # 90°-os balra fordulás (kezdés)
-            (2.0, 0.0, 1.0),          # Egyenes felfelé
-            (0.0, -math.radians(300), 0.5), # Jobbra fordulás 140°
-            (1.0, 0.0, 1.0),          # Jobbra egyenes
-            
-            (0.0,math.radians(120), 0.5), # Jobbra fordulás 90°
-            (1.0, 0.0, 1.0),          # Lefelé egyenes
-            (0.0, -math.radians(320), 0.5), # Jobbra fordulás 90°
-            (2.0, 0.0, 1.0),          # Lefelé befejezés
-            (0.0, 0.0, 1.0)           # Leállás
+            (0.0, math.radians(120), 1.0), 
+            (2.0, 0.0, 1.0),         
+            (0.0, -math.radians(300), 0.5),
+            (1.0, 0.0, 1.0),         
+
+            (0.0,math.radians(120), 0.5),
+            (1.0, 0.0, 1.0),          
+            (0.0, -math.radians(320), 0.5), 
+            (2.0, 0.0, 1.0),          
+            (0.0, 0.0, 1.0)           
         ]
 
         self.current_step = 0
